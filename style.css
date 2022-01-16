@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 200vh;
+}
+a {
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.screenLoad {
+  /*display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
+  background-color: bisque;
+}
+.screenContaint {
+  min-height: 100vh;
+  background-color: aquamarine;
+}
+.challenge {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.challengeName {
+  display: flex;
+  z-index: 99;
+}
+.h1Txt-15 {
+  font-size: 10em;
+}
+.creatorName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20px;
+  padding-top: 10px;
+  position: absolute;
+  right: 0%;
+}
+.creatorName img {
+  width: 15em;
+  height: 15em;
+  margin-top: 20px;
+}
+.challengeTxtHeading {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.challengeTxtHeading > h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.challengeTxtHeading h1:nth-child(2) {
+  margin-bottom: 10px;
+}
+.challengeGold {
+  position: relative;
+  margin: auto;
+  bottom: 130px;
+}
+.challengeGold > h1 {
+  font-size: 20em;
+  font-family: 'The Nautigal', cursive;
+  color: gray;
+}
+/* .downClickButton {
+  margin-top: 0%;
+} */
+
+.programmingName {
+  display: flex;
+  position: absolute;
+  top: 40em;
+  left: 15px;
+  background: none;
+  transform-origin: 0 0;
+  transform: rotate(270deg);
+}
+.programmingName > h1 {
+  text-transform: uppercase;
+  font-size: 80px;
+}
+.imgJS {
+  border-radius: 20px;
+}
+
+/*----------------------------------------------------------*/
+/*Pulsh Effect ...........*/
+.pulse {
+  height: 80px;
+  width: 80px;
+  background: linear-gradient(#8a82fb, #407ed7);
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+  color: white;
+}
+.pulse::before,
+.pulse::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #8a82fb;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0.7;
+}
+.pulse::before {
+  animation: pulse 2s ease-out infinite;
+}
+.pulse::after {
+  animation: pulse 2s 1s ease-out infinite;
+}
+@keyframes pulse {
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+/*---------------------------------------------------------*/
+/* Bouncing Arrow .......... */
+/* .arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+} */
+/*----------------------------------------------------------------*/
+.itemFlexContex {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.challengeItem {
+  padding: 25px;
+}
+.challengeItem div {
+  height: 15em;
+  width: 25em;
+  background-color: red;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 11px 25px 0 rgb(0 0 0 / 19%);
+}
+
+/*----------------------------------------------------------------*/
+/*--------------------------------------------------------*/
+/*  : Scroll Bar data set........*/
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*-------------------------------------------------------*/
+/*Media Queary .................*/
+
+@media (max-width: 1200px) {
+  .challengeTxtHeading h1:nth-child(2) {
+    color: red;
+  }
+  .challengeGold > h1 {
+    font-size: 15em;
+  }
+}
+@media (max-width: 992px) {
+  .challengeTxtHeading h1:nth-child(2) {
+    color: green;
+  }
+  .challengeName {
+    font-size: 12px;
+  }
+  .challengeGold > h1 {
+    font-size: 12em;
+    font-family: 'The Nautigal', cursive;
+    color: gray;
+  }
+}
+@media (max-width: 412px) {
+  .challengeTxtHeading h1:nth-child(2) {
+    color: blue;
+  }
+  .challenge {
+    padding-top: 5em;
+  }
+  .creatorName img {
+    display: none;
+  }
+  .programmingName {
+    top: 20em;
+    left: 85px;
+    background: none;
+    transform-origin: 0 0;
+    transform: rotate(0deg);
+  }
+  .programmingName > h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .challengeName {
+    font-size: 8px;
+  }
+  .challengeGold > h1 {
+    font-size: 100px;
+    font-family: 'The Nautigal', cursive;
+    color: gray;
+  }
+  .creatorName {
+    font-size: 10px;
+  }
+  .challengeItem div {
+    height: 10em;
+    width: 20em;
+  }
+}
