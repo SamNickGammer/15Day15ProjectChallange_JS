@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta');
+
+body {
+  margin: 0px;
+  padding: 30px;
+  font-family: 'Mukta', sans-serif;
+  overflow: hidden;
+  background: #313131;
+}
+canvas {
+  box-shadow: -3px 2px 9px 6px black;
+  cursor: url(https://img.icons8.com/external-tal-revivo-filled-tal-revivo/24/000000/external-mouse-cursor-pointer-arrow-head-isolated-on-white-background-selection-filled-tal-revivo.png),
+    auto;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.tools .color-field {
+  height: 40px;
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-self: center;
+  margin: 0 15px;
+}
+
+.tools .button {
+  align-self: center;
+  width: 100px;
+  height: 40px;
+  border: 2px solid white;
+  cursor: pointer;
+  color: white;
+  background: #222;
+  font-weight: bold;
+  margin: 0 15px;
+}
+.color-picker {
+  align-self: center;
+  margin: 0 15px;
+  height: 50px;
+}
+.pen-range {
+  align-self: center;
+  margin: 0 10px;
+  height: 50px;
+}
+.eraser {
+  height: 40px;
+  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  align-self: center;
+  font-size: 25px;
+  background: white;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.eraser i {
+  margin-left: 6px;
+}
+.selectedField {
+  box-shadow: -3px 2px 9px 6px black, 3px 2px 9px 6px black;
+}
