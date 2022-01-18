@@ -16,6 +16,16 @@ a {
 html {
   scroll-behavior: smooth;
 }
+a {
+  text-decoration: none;
+}
+
+.displayNone {
+  display: none;
+}
+.displayBlock {
+  display: block;
+}
 .screenLoad {
   /*display: flex;
   justify-content: center;
@@ -179,14 +189,99 @@ html {
 .challengeItem {
   padding: 25px;
 }
-.challengeItem div {
-  height: 15em;
-  width: 25em;
-  background-color: red;
-  border-radius: 30px;
+.challengeItem .card {
+  height: 25em;
+  width: 20em;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 11px 25px 0 rgb(0 0 0 / 19%);
 }
-
+.challengeItem .card .upperDisplay {
+  background-color: blue;
+  width: 20em;
+  height: 15em;
+  border-radius: 20px 20px 0 0;
+}
+.challengeItem .card .upperDisplay .dayNumber {
+  position: relative;
+  bottom: 246px;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 50px;
+  width: 75px;
+  border-radius: 20px 0 10px 0;
+  padding-left: 13px;
+  padding-top: 13px;
+  font-weight: bold;
+  color: white;
+}
+.challengeItem .card .upperDisplay .containtImage {
+  overflow: hidden;
+  height: 15em;
+  width: 20em;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+}
+.challengeItem .card .lowerDisplay {
+  background-color: white;
+  width: 20em;
+  height: 10em;
+  border-radius: 0 0 20px 20px;
+  color: black;
+}
+.challengeItem .card .lowerDisplay .projectName {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+.challengeItem .card .lowerDisplay .projectDesc {
+  margin-left: 10px;
+}
+.challengeItem .card .lowerDisplay .dateProject {
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.langUsed {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  padding-top: 10px;
+  color: black;
+}
+.langUsed .lanHTML {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 45px;
+  background: rgba(160, 29, 29, 0.5);
+}
+.langUsed .lanCSS {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 40px;
+  background: rgba(29, 31, 160, 0.5);
+}
+.langUsed .lanJS {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 85px;
+  background: rgba(160, 151, 29, 0.5);
+}
+.langUsed .lanAPI {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 33px;
+  background: rgba(29, 129, 160, 0.5);
+}
 /*----------------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*  : Scroll Bar data set........*/
