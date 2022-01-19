@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>CountDown :: SamNickGammer</title>
+    <link rel="stylesheet" href="./style_CountDown.css">
+</head>
+
+<body>
+
+    <div class="timer">
+        <div class="timeControler">
+            <button data-time="20" class="buttonGlass timerButton">Rapid 20 Sec</button>
+            <button data-time="300" class="buttonGlass timerButton">Work 5 Min</button>
+            <button data-time="900" class="buttonGlass timerButton">Quick 15 Min</button>
+            <button data-time="1200" class="buttonGlass timerButton">Snack 20 Min</button>
+            <button data-time="3600" class="buttonGlass timerButton">Lunch 60 Min</button>
+            <form id="customInput" name="customInput" autocomplete="off">
+                <input class="buttonGlass" type="text" name="miutes" placeholder="Enter Time in Minutes">
+            </form>
+            <button class="buttonGlass modeChange" id="changeTheme" onclick="changeTheme()">🌞 Light Theme</button>
+        </div>
+        <div class="timeDisplay">
+            <div class="displayTimeLeft timeLeftDark">0:00</div>
+            <div class="displayTimeEnds timeEndsDark">Start Clock ; Choose or Enter Time</div>
+        </div>
+
+    </div>
+
+    <script src="./script_CountDown.js"></script>
+</body>
+
+</html>

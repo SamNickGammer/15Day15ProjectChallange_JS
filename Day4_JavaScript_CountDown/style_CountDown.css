@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta');
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  background: rgb(27, 27, 27);
+}
+
+.displayTimeLeft {
+  font-weight: 100;
+  font-size: 20rem;
+  margin: 0;
+}
+.timeLeftDark {
+  color: whitesmoke;
+  text-shadow: 4px 4px 0 rgba(236, 236, 236, 0.05);
+}
+.timeLeftLight {
+  color: royalblue;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+.timer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.timeControler {
+  display: flex;
+}
+.timeControler > * {
+  flex: 1;
+}
+.timeControler form {
+  flex: 1;
+  display: flex;
+}
+.timeControler input {
+  flex: 1;
+  border: 1px solid black;
+  padding: 1rem;
+}
+.buttonGlass {
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #efefef;
+  font-family: 'Mukta', sans-serif;
+}
+.timeDisplay {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.displayTimeEnds {
+  font-size: 4rem;
+}
+.timeEndsDark {
+  color: wheat;
+}
+.timeEndsLight {
+  color: rebeccapurple;
+}
