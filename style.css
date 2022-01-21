@@ -31,11 +31,13 @@ a {
   justify-content: center;
   align-items: center; */
   min-height: 100vh;
-  background-color: bisque;
+  /* background-color: bisque; */
+  background: url(./assets/Image/background_1_blur9.5.png);
 }
 .screenContaint {
   min-height: 100vh;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+  background: url(./assets/Image/background_2_blur3.5.png);
 }
 .challenge {
   display: flex;
@@ -43,6 +45,7 @@ a {
   flex-direction: column;
   align-items: center;
   min-height: 60vh;
+  color: white;
 }
 
 .challengeName {
@@ -51,6 +54,7 @@ a {
 }
 .h1Txt-15 {
   font-size: 10em;
+  color: #f7db3c;
 }
 .creatorName {
   display: flex;
@@ -60,6 +64,7 @@ a {
   padding-top: 10px;
   position: absolute;
   right: 0%;
+  color: white;
 }
 .creatorName img {
   width: 15em;
@@ -88,7 +93,7 @@ a {
 .challengeGold > h1 {
   font-size: 20em;
   font-family: 'The Nautigal', cursive;
-  color: gray;
+  color: lightseagreen;
 }
 /* .downClickButton {
   margin-top: 0%;
@@ -102,6 +107,7 @@ a {
   background: none;
   transform-origin: 0 0;
   transform: rotate(270deg);
+  color: #f7db3c;
 }
 .programmingName > h1 {
   text-transform: uppercase;
@@ -116,7 +122,7 @@ a {
 .pulse {
   height: 80px;
   width: 80px;
-  background: linear-gradient(#8a82fb, #407ed7);
+  background: linear-gradient(#f7db3c, #c2a818);
   border-radius: 50%;
   position: relative;
   margin: auto;
@@ -135,7 +141,7 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #8a82fb;
+  background-color: #f7db3c;
   border-radius: 50%;
   z-index: 1;
   opacity: 0.7;
@@ -213,6 +219,19 @@ a {
   font-weight: bold;
   color: white;
 }
+.challengeItem .card .upperDisplay .dateProject {
+  position: relative;
+  bottom: 295px;
+  left: 145px;
+  background-color: rgba(0, 0, 0, 0.63);
+  height: 50px;
+  width: 175px;
+  border-radius: 0 20px 0 10px;
+  padding-left: 13px;
+  padding-top: 13px;
+  font-weight: bold;
+  color: white;
+}
 .challengeItem .card .upperDisplay .containtImage {
   overflow: hidden;
   height: 15em;
@@ -281,6 +300,15 @@ a {
   height: 20px;
   width: 33px;
   background: rgba(29, 129, 160, 0.5);
+}
+.langUsed .servLOC {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 115px;
+  background: rgba(113, 216, 17, 0.5);
 }
 /*----------------------------------------------------------------*/
 /*--------------------------------------------------------*/
