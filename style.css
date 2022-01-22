@@ -310,6 +310,24 @@ a {
   width: 115px;
   background: rgba(113, 216, 17, 0.5);
 }
+.langUsed .cdnUsed.fontAwsome {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 110px;
+  background: rgba(82, 141, 215, 0.5);
+}
+.langUsed .cdnUsed.bootstrap {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 75px;
+  background: rgba(108, 16, 237, 0.5);
+}
 /*----------------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*  : Scroll Bar data set........*/
