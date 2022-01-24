@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.739);
+}
+.result_container {
+  display: flex;
+  justify-content: space-between;
+}
+.result_container .count_viewer {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 5px 5px 20px 2px rgba(0, 0, 0, 0.739);
+}
+.result_container .count_viewer .count_name {
+  /* background-color: lightcoral; */
+  border-radius: 10px 10px 0 0;
+  margin-top: 5px;
+  padding: 5px;
+}
+.result_container .count_viewer .count_display {
+  font-size: 40px;
+}
+.input_container {
+  margin: 20px;
+}
+.input_container .input_field textarea {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  height: 200px;
+  width: 240px;
+  max-width: 545px;
+  max-height: 221px;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: 0.5;
+}
+.hr-text::before {
+  content: '';
+  background: linear-gradient(to right, transparent, #818078, transparent);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+}
+.hr-text::after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #818078;
+  background-color: #fcfcfa;
+}
+.input_container .input_file input {
+  /* display: flex; */
+  width: 100px;
+}
+.input_container .input_file input::-webkit-file-upload-button {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+.input_container .input_file input::-webkit {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+}
