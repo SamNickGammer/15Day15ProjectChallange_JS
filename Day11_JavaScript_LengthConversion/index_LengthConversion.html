@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Conversion</title>
+    <link rel="stylesheet" href="./style_LengthConversion.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="heading">
+        <h1>Length Conversion</h1>
+    </div>
+    <div class="container">
+        <div class="unitContainer">
+            <div class="unit">
+                <label for="feet">Feet</label>
+                <input type="number" name="feet" class="feet" placeholder="Feet" oninput="conversion(this)">
+            </div>
+            <div class="unit">
+                <label for="meter">Meter</label>
+                <input type="number" name="meter" class="meter" placeholder="Meter" oninput="conversion(this)">
+            </div>
+            <div class="unit">
+                <label for="inch">Inches</label>
+                <input type="number" name="inch" class="inch" placeholder="Inches" oninput="conversion(this)">
+            </div>
+            <div class="unit">
+                <label for="cm">Centimeter</label>
+                <input type="number" name="cm" class="cm" placeholder="Centimeter" oninput="conversion(this)">
+            </div>
+        </div>
+        <div class="unitContainer">
+            <div class="unit">
+                <label for="yard">Yards</label>
+                <input type="number" name="yard" class="yard" placeholder="Yards" oninput="conversion(this)">
+            </div>
+            <div class="unit">
+                <label for="km">Kilometers</label>
+                <input type="number" name="km" class="km" placeholder="Kilometers" oninput="conversion(this)">
+            </div>
+            <div class="unit">
+                <label for="miles">Miles</label>
+                <input type="number" name="miles" class="miles" placeholder="Miles" oninput="conversion(this)">
+            </div>
+        </div>
+    </div>
+
+    <script src="./script_LengthConversion.js"></script>
+</body>
+
+</html>
