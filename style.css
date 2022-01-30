@@ -328,6 +328,15 @@ a {
   width: 75px;
   background: rgba(108, 16, 237, 0.5);
 }
+.langUsed .cdnUsed.localStorage {
+  margin-right: 10px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 13px;
+  height: 20px;
+  width: 100px;
+  background: rgba(250, 234, 6, 0.5);
+}
 /*----------------------------------------------------------------*/
 /*--------------------------------------------------------*/
 /*  : Scroll Bar data set........*/
